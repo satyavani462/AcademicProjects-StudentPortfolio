@@ -1,0 +1,75 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.center{
+    text-align: center;
+    
+}
+#home{
+    position: absolute;
+    right: 40px;
+    top: 4px;
+}
+.nav::after{
+    content: "";
+    position: absolute;
+    background:url('facb.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.88;
+}
+.nav{
+    background-color: black;
+}
+input[type=text]
+{
+    width: 86%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    padding: 2px;
+    font-size: 17px;
+}
+button{
+    margin-left: 12px;
+    margin-right: 10px;
+    padding: 2px 53px;
+    background-color: green;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(15, 156, 15);
+}
+.mainbox{
+    background: url(/img/adminlogin.webp) no-repeat;
+    margin:40px auto;
+    width: 60%;
+    padding: 12px 10px;
+}
+#notes{
+   text-align: center;
+    font-size: 18px;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 23px;
+    background-color: #234A7C;
+}
+.btnclass{
+    position: absolute;
+    right:340px ;
+}

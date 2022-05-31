@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="homelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>*{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .center{
+        text-align: center;
+    }
+    
+    body::before{
+        content: "";
+        position: absolute;
+        background-color: black;
+        /* background:url('/img/facback.webp') no-repeat center center/cover; */
+        background-blend-mode: darken;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity:0.88;
+    }
+    #home{
+        position: absolute;
+        left: 40px;
+        top: 2rem;
+    }
+    h1{
+        font-size: 40px;
+        color: white;
+        margin: 34px;
+        /* color: orange; */
+    }
+    .mainbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 58px 50px;
+        padding: 24px 12px;
+        width: 300px;
+        height: 340px;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        box-shadow: 0 4px 8px 0 rgba(173, 195, 201, 0.495), 0 6px 20px 0 rgba(160, 185, 198, 0.571);
+        transition: all 1s ease-in-out ;
+    }
+    img{
+        height:170px ;
+        width: 230px;
+        border-radius:50%;
+    }
+    .box p{
+        color:black;
+        font-size: 18px;
+        margin-bottom: 12px;
+        
+    }
+    .box .name{
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 12px;
+    }
+    .box a{
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: #213A7C;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 3px;
+    }
+    .box:hover{
+        background-color:rgba(0, 0, 0, 0.104);
+        background-color: black;
+        transform: scale(1.2);
+    }
+    .box:hover p{
+        color: white;
+    }</style>
+    <title>Faculty Details</title>
+</head>
+<body>
+    <a href="home.php" target="_blank"><i class="fa fa-home" id="home" aria-hidden="true" style="font-size:40px;color:white" ></i></a>
+    <h1 class="center">Faculty Details</h1>
+    <div class="mainbox">
+        <div class="box" id="box1">
+            <img src="prajna.jpg" alt="">
+            <p class="name">Prajna</p>
+            <p>Head Of The Department</p>
+           <a href="contact.html">contact</a>
+        </div>
+        <div class="box" id="box2">
+            <img src="sowmya.jpg" alt="">
+            <p class="name">Sowmya</p>
+            <p>Assistant Professor</p>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box" id="box3">
+            <img src="sunanda.jpg" alt="">
+            <p class="name">Sunanda</p>
+            <p>Assistant Professor</p>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
+</body>
+</html>

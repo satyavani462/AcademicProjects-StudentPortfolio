@@ -1,0 +1,93 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.center{
+    text-align: center;
+}
+body::before{
+    content: "";
+    position: absolute;
+    /* background:url('/img/contactback2.jpg') no-repeat center center/cover; */
+    background: black;
+    background-blend-mode: darken;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 130%;
+    z-index: -1;
+    opacity:0.88;
+}
+p{
+    font-size: 40px;
+    padding-right: 40px;
+}
+#home{
+    position: absolute;
+    right: 40px;
+    top: 1.2rem;
+}
+.container
+{
+position: relative;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:auto 50%;
+width: 75%;
+top: 30px;
+right: 600px;
+}
+.smallcont input[type=text],input[type=number],input[type=password],input[type=submit],textarea{
+    display:block;
+    padding:5px 34px;
+    margin:10px 12px;
+    width:393px;
+    font-size:18px;
+    border-radius: 10px;
+    color: black;
+}
+.smallcont input[type=checkbox]{
+margin-left:19px;
+height: 15px;
+width: 16px;
+}
+span{
+    font-weight: 500;
+    margin: 12px;
+   font-size:18px;
+   color: white;    
+}
+.smallcont label
+{
+font-weight: 500;
+ margin: 12px;
+font-size:18px;
+color: white;
+} 
+input[type=submit]
+{
+    background-color: #213A7C;
+    border-radius: 20px;
+    color: white;
+}
+input[type=submit]:hover{
+    opacity: 0.7;
+}
+form p{
+    margin: 19px 10px;
+    font-size: 16px;
+}
+.smallcont .label
+{
+font-weight: 500;
+ margin: 20px 0px;
+font-size:18px;
+color: white;
+} 

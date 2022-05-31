@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="homelogo.png" type="image/x-icon">
+    <title>Contact</title>
+    <style>
+        *{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.center{
+    text-align: center;
+}
+.img{
+    position: absolute;
+    top: 14rem;
+    left: 6rem;
+}
+.img img{
+    width: 300px;
+    height: 300px;
+
+}
+html {
+    background: black;
+    background: linear-gradient(to right,black 50%,grey);
+  }
+  
+  html:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 1000px);
+    left: 0;
+    width: 800px;
+    height:2000px;
+    background: white;
+    transform: skew(-15deg);
+    transform-origin:top;
+
+  }
+h1{
+    padding-right: 50px;
+}
+#home{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.icons{
+    position: relative;
+    left: 1040px;
+    font-size: 23px;
+}
+.icons a{
+    margin: 8px;
+}
+.container
+{
+display:flex;
+justify-content:center;
+align-items:center;
+margin:auto 50%;
+width: 50%;
+padding-top: 40px;
+padding-bottom: 20px;
+padding-right:100px;
+}
+.smallcont input,textarea{
+    display:block;
+    padding:5px 34px;
+    margin:10px 12px;
+    width:393px;
+    font-size:18px;
+    border-radius: 10px;
+    color: black;
+}
+.smallcont label
+{
+font-weight: 500;
+ margin: 12px;
+font-size:18px;
+color: white
+} 
+input[type=button]
+{
+    background-color: #234A7C;
+    border-radius: 20px;
+    color: white;
+}
+input[type=button]:hover{
+    opacity: 0.7;
+}
+    </style>
+</head>
+<body>
+    <a href="home.php" target="_blank"><i class="fa fa-home" id="home" aria-hidden="true" style="font-size:40px;color:black" ></i></a>
+    <div class="img">
+        <img src="cont.jpg" alt="">
+    </div>
+    <div class="container background">
+        <h1>Contact Us</h1>
+    <form action="">
+        <div class="smallcont">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" name="name" required>
+        <label for="id">ID</label>
+        <input type="number" id="id" placeholder="Your ID" name="id" required>
+        <label for="subject">subject</label>
+        <textarea name="subject" id="subject" cols="20" rows="10" placeholder="Write a message" required></textarea>
+        <input type="button" value="Submit">
+        </div>
+    </form>
+    
+    </div>
+    <div class="icons">
+    <a href="https://www.andhrauniversity.edu.in/" target="_blank"><i id="f1"class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    <a href="https://www.andhrauniversity.edu.in/" target="_blank"><i id="f2"class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.andhrauniversity.edu.in/" target="_blank"><i id="f3"class="fa fa-google" aria-hidden="true"></i></a>
+    </div>
+</body>
+</html>

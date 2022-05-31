@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="homelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <title>Courses Offered</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .map {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .background {
+            background: rgb(0, 0, 0, 0.7) url('homeback.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        #navbar {
+            font-size: 15px;
+            background-color: black;
+            color: #ffff;
+            font-weight: bold;
+        }
+
+        #logo {
+            width: 44px;
+            height: 29px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #navbar p {
+            margin: 12px;
+        }
+
+        #text {
+            padding: 0;
+        }
+
+        #time {
+            padding: 8px;
+            color: #ffff;
+            font-weight: bold;
+        }
+
+        .icons {
+            position: relative;
+            left: 250px;
+            font-size: 23px;
+        }
+
+        a #f1,
+        #f2,
+        #f3 {
+            margin: 4px;
+            color: #ffff;
+        }
+
+        #img {
+            margin-top: 42px;
+        }
+
+        #timing {
+            font-size: 18px;
+            margin-top: 29px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 49px;
+            position: sticky;
+            top: 0;
+            background-color: #234A7C;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            text-decoration: none;
+            width: 180px;
+            color: white;
+            display: block;
+            font-size: 18px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        a:hover {
+            color: rgb(196, 191, 191);
+        }
+
+        ul li ul {
+            background-color: #234A7C;
+        }
+
+        ul li ul li a {
+            color: white;
+        }
+
+        ul li ul li {
+            float: none;
+        }
+
+        ul li ul {
+            display: none;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        ul li ul li {
+            border-bottom: 1px solid gray;
+        }
+
+        h1 {
+            color: black;
+            margin: 30px;
+        }
+
+        i {
+            color: black;
+        }
+
+        .ug .h3 {
+            color: black;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .ug {
+            margin: auto 20%;
+        }
+
+        .ug ul {
+            width: 800px;
+        }
+
+        .ug ul li {
+            border: 2px solid lightgray;
+            color: black;
+            padding: 14px 20px;
+            float: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="displayTime()">
+    <section id="navbar">
+        <div class="container">
+            <p href="#">
+                <img id="logo" src="india.png" alt="">
+            <p>|</p>
+            <p id="text">India,Andhrapradesh,Vishakapatnam</p>
+            <p>|</p>
+            <i class="fa fa-clock-o" style="font-size:24px;margin-left:5px;"></i>
+            <!-- <i class="fa-solid fa-clock"></i> -->
+            <span id="time"></span>
+            </p>
+            <div class="icons">
+                <a href="https://www.andhrauniversity.edu.in/" target="_blank"><i id="f1" class="fa fa-facebook-square"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.andhrauniversity.edu.in/" target="_blank"><i id="f2" class="fa fa-twitter"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.andhrauniversity.edu.in/" target="_blank"><i id="f3" class="fa fa-google"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="center" id="img">
+        <img src="sectionimg.png" alt="">
+    </section>
+    <section class="center" id="timing">
+        <p><b>Office Timings </b>: Mon-Sat : 10:00 AM to 5:00 PM</p>
+        <p><b>Phone</b>:0891 2844000 </p>
+    </section>
+    <div class="nav">
+        <ul>
+            <li class="li"><a href="home.php">Home</a></li>
+
+            <li><a href="course.html" target="_blank">Courses</a>
+
+            <li class="li"><a href="faculty.html" target="_blank">Faculty</a></li>
+            <li class="li"><a href="register.html" target="_blank">Register</a></li>
+            <li class="li"><a href="contact.html" target="_blank">Contact Us</a></li>
+            <li class="li"><a href="#">Login</a>
+                <ul>
+                    <li><a href="adminlogin.php" target="_blank">Admin</a>
+                    <li><a href="studentlogin.php" target="_blank">Student</a>
+                </ul>
+            </li>
+            <li class="li log"><a href="logout.php">Logout</a>
+        </ul>
+    </div>
+    <div class="coursecontainer">
+        <div class="course">
+            <h1 class="center">College of Engineering For Women- <i>Courses Offered</i></h1>
+        </div>
+    </div>
+    <div class="ug">
+        <ul>
+            <li class="h3">UG Courses In Engineering</li>
+            <li>B-Tech Computer Science And Systems Engineering</li>
+            <li>B-Tech Electronics And Communication Engineering</li>
+            <li>B-Tech Electrical And Electronics Engineering</li>
+            <li>B-Tech Mechanical Engineering</li>
+            <li>B-Tech Civil Engineering</li>
+            <li class="h3">Integrated Courses In Engineering</li>
+            <li>6 years Integrated B-Tech +M-Ttech Dual Degree In Computer Science And Systems Engineering</li>
+            <li>6 years Integrated B-Tech +M-Ttech Dual Degree In Electronics And Communication Engineering</li>
+            <li>6 years Integrated B-Tech +M-Ttech Dual Degree In Electrical And Electronics Engineering</li>
+            <li>6 years Integrated B-Tech +M-Ttech Dual Degree In Mechanical Engineering</li>
+            <li>6 years Integrated B-Tech +M-Ttech Dual Degree In Civil Engineering</li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

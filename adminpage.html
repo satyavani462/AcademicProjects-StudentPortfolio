@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="homelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Admin Page</title>
+    <style>
+        *{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.center{
+    text-align: center;
+}
+body::before{
+    content: "";
+    position: absolute;
+    /* background-color: black; */
+    background:url('facb.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.88;
+}
+#home{
+    position: absolute;
+    right: 40px;
+    top: 4px;
+}
+.nav{
+    width:100%;
+    height:49px;
+    position: sticky;
+    top: 0;
+    background-color:black;
+    }
+ul{
+    
+    list-style:none;
+    padding:0;
+    margin:0;
+    position: absolute;
+    }
+    ul li
+    {
+    float:left;
+    }
+    ul li a{
+    text-decoration:none;
+    width:180px;
+    color:white;
+    display:block;
+    font-size:18px;
+    border-radius:10px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    }
+    a:hover{
+    color: rgb(196, 191, 191);
+    }
+
+    ul li ul li a{
+        color: white;
+    }
+    ul li ul li{
+    border-bottom:1px solid gray;
+    }
+    .mainbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box{
+        height: 150px;
+        width: 600px;
+        margin: 34px;
+        padding: 20px 34px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .box p{
+        font-size: 18px;
+    }
+    .box a{
+     text-decoration: none;
+     display:block;
+     text-align: center;
+     background-color: #234A7C;
+     color: white;
+     margin-top: 13px;
+    }
+    .box a:hover{
+        background-color: rgb(49, 47, 47);
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+        <li class="li"><a href="adminpage.html">Home</a></li>
+        <li class="li"><a href="contact.html" target="_blank">Contact</a></li>
+        <li class="li"><a href="notification.php" target="_blank">Notifications</a></li>
+        <li class="li"><a href="studentsearch.php" target="_blank">Student Search</a></li>
+        <li class="li"><a href="logout.php" >Logout</a></li>
+        </ul>
+        <a href="home.php" target="_blank"><i class="fa fa-home" id="home" aria-hidden="true" style="font-size:40px;color:white" ></i></a>
+    </div>
+    <div class="mainbox">
+        <div class="box" id="box1">
+            <h1>Attendance</h1>
+            <p>Manage Attendance Here</p>
+            <a href="attendance.php"target="_blank">GO</a>
+        </div>
+        <div class="box" id="box2">
+            <h1>Mark Sheet</h1>
+            <p>Manage Marks Here</p>
+            <a href="marks.php"target="_blank">GO</a>
+        </div>
+        <div class="box" id="box3">
+            <h1>Fee Payment Log</h1>
+            <p>Manage Payments Here</p>
+            <a href="payment.php" target="_blank">GO</a>
+        </div>
+    </div>
+</body>
+</html>
